@@ -32,7 +32,7 @@ router.post("/sign-up", async (req, res) => {
     email: email
   });
   await user.save();
-  //console.log(user);
+  // console.log(user);
   res.send({
     code: 0,
     msg: "注册成功"
